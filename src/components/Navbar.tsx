@@ -97,15 +97,27 @@ export default function Navbar() {
           </a>
         </div>
 
-        <button
-          type="button"
-          aria-label={open ? "Close menu" : "Open menu"}
-          aria-expanded={open ? "true" : "false"}
-          onClick={() => setOpen((value) => !value)}
-          className="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-white lg:hidden"
-        >
-          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+        {open ? (
+          <button
+            type="button"
+            aria-label="Close menu"
+            aria-expanded="true"
+            onClick={() => setOpen(false)}
+            className="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-white lg:hidden"
+          >
+            <X className="h-5 w-5" />
+          </button>
+        ) : (
+          <button
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            onClick={() => setOpen(true)}
+            className="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-white lg:hidden"
+          >
+            <Menu className="h-5 w-5" />
+          </button>
+        )}
       </nav>
 
       <AnimatePresence>

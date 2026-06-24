@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "python -m http.server 4173 --directory out",
     "preview": "python -m http.server 4173 --directory out",
+    "deploy:workers": "npm run build && npx wrangler deploy",
+    "preview:workers": "npm run build && npx wrangler dev",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier . --write",
