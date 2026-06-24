@@ -1,0 +1,11 @@
+.next/
+node_modules/
+.npm-cache/
+
+dev-server.out.log
+dev-server.err.log
+static-server.out.log
+static-server.err.log
+
+.env*.local
+*.tsbuildinfo
