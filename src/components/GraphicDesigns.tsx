@@ -83,6 +83,7 @@ export default function GraphicDesigns() {
               >
                 <button
                   type="button"
+                  aria-label={`Open ${design.title} preview`}
                   onClick={() => setSelectedDesign(design)}
                   className="focus-ring relative block aspect-[4/3] w-full overflow-hidden text-left"
                 >
@@ -94,7 +95,7 @@ export default function GraphicDesigns() {
                     sizes="(min-width: 1280px) 30vw, (min-width: 640px) 45vw, 92vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-transparent to-transparent opacity-90" />
-                  <span className="absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-950/75 text-white backdrop-blur">
+                  <span className="glass-blur absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-950/75 text-white">
                     <Maximize2 className="h-4 w-4" />
                   </span>
                 </button>
@@ -118,7 +119,7 @@ export default function GraphicDesigns() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[80] grid place-items-center bg-slate-950/85 p-4 backdrop-blur-xl"
+            className="glass-blur-xl fixed inset-0 z-[80] grid place-items-center bg-slate-950/85 p-4"
             onClick={() => setSelectedDesign(null)}
           >
             <motion.div
@@ -140,7 +141,7 @@ export default function GraphicDesigns() {
                   type="button"
                   aria-label="Close design preview"
                   onClick={() => setSelectedDesign(null)}
-                  className="focus-ring absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-950/80 text-white backdrop-blur"
+                  className="focus-ring glass-blur absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-950/80 text-white"
                 >
                   <X className="h-5 w-5" />
                 </button>

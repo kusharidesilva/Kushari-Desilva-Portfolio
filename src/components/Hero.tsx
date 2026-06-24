@@ -115,7 +115,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.55 + index * 0.08 }}
               className={[
-                "absolute hidden rounded-full border border-white/15 bg-slate-950/80 px-4 py-2 text-sm font-semibold text-white shadow-violet backdrop-blur-xl sm:inline-flex",
+                "glass-blur-xl absolute hidden rounded-full border border-white/15 bg-slate-950/80 px-4 py-2 text-sm font-semibold text-white shadow-violet sm:inline-flex",
                 index === 0 ? "-left-6 top-16" : "",
                 index === 1 ? "-right-4 top-28" : "",
                 index === 2 ? "-left-2 bottom-24" : "",

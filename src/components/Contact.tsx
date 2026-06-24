@@ -65,7 +65,7 @@ export default function Contact() {
                     key={label}
                     href={href}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="focus-ring inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:border-sky-300/50 hover:bg-white/5"
                   >
                     <Icon className="h-4 w-4" />

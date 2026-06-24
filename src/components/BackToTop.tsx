@@ -25,7 +25,7 @@ export default function BackToTop() {
           exit={{ opacity: 0, y: 18 }}
           whileHover={{ y: -3 }}
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="focus-ring fixed bottom-5 right-5 z-50 inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-slate-950/85 text-sky-200 shadow-glow backdrop-blur-xl transition hover:border-sky-300/50 hover:text-white"
+          className="focus-ring glass-blur-xl fixed bottom-5 right-5 z-50 inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-slate-950/85 text-sky-200 shadow-glow transition hover:border-sky-300/50 hover:text-white"
         >
           <ArrowUp aria-hidden="true" className="h-5 w-5" />
         </motion.button>

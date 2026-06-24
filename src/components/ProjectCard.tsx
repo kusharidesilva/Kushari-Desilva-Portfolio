@@ -75,7 +75,7 @@ export default function ProjectCard({ project, onOpen }: ProjectCardProps) {
               key={link.href}
               href={link.href}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="focus-ring inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:border-violet-300/50 hover:bg-white/5"
             >
               {link.type === "github" ? (

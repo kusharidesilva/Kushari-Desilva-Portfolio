@@ -125,7 +125,7 @@ export default function Projects() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[80] grid place-items-center bg-slate-950/80 p-4 backdrop-blur-xl"
+            className="glass-blur-xl fixed inset-0 z-[80] grid place-items-center bg-slate-950/80 p-4"
             onClick={() => setSelectedProject(null)}
           >
             <motion.div
@@ -148,7 +148,7 @@ export default function Projects() {
                   type="button"
                   aria-label="Close project details"
                   onClick={() => setSelectedProject(null)}
-                  className="focus-ring absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-950/80 text-white backdrop-blur"
+                  className="focus-ring glass-blur absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-950/80 text-white"
                 >
                   <X className="h-5 w-5" />
                 </button>
@@ -184,7 +184,7 @@ export default function Projects() {
                         key={link.href}
                         href={link.href}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         className="focus-ring inline-flex items-center gap-2 rounded-full bg-sky-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:bg-sky-200"
                       >
                         {link.label}

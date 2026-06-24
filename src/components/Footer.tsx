@@ -27,7 +27,7 @@ export default function Footer() {
               key={label}
               href={href}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label={label}
               className="focus-ring inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-slate-300 transition hover:border-sky-300/50 hover:text-sky-200"
             >
