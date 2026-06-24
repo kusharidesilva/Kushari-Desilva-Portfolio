@@ -33,7 +33,9 @@ export default function Timeline() {
                     <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04] text-sky-200">
                       <Icon className="h-5 w-5" aria-hidden="true" />
                     </span>
-                    <Badge tone={entry.type === "Education" ? "cyan" : "violet"}>{entry.type}</Badge>
+                    <Badge tone={entry.type === "Education" ? "cyan" : "violet"}>
+                      {entry.type}
+                    </Badge>
                   </div>
                   <span className="rounded-full border border-white/10 px-3 py-1 text-xs font-semibold text-slate-300">
                     {entry.period}

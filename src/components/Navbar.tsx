@@ -100,7 +100,7 @@ export default function Navbar() {
         <button
           type="button"
           aria-label={open ? "Close menu" : "Open menu"}
-          aria-expanded={open}
+          aria-expanded={open ? "true" : "false"}
           onClick={() => setOpen((value) => !value)}
           className="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-white lg:hidden"
         >

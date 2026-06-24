@@ -46,7 +46,13 @@ export default function Projects() {
         project.secondaryCategory === activeCategory;
       const matchesQuery =
         !normalizedQuery ||
-        [project.title, project.description, project.category, project.secondaryCategory ?? "", ...project.technologies]
+        [
+          project.title,
+          project.description,
+          project.category,
+          project.secondaryCategory ?? "",
+          ...project.technologies
+        ]
           .join(" ")
           .toLowerCase()
           .includes(normalizedQuery);

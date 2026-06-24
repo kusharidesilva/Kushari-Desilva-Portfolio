@@ -36,7 +36,9 @@ export default function GraphicDesigns() {
 
   const filteredDesigns = useMemo(
     () =>
-      designWorks.filter((design) => activeCategory === "All" || design.category === activeCategory),
+      designWorks.filter(
+        (design) => activeCategory === "All" || design.category === activeCategory
+      ),
     [activeCategory]
   );
 
@@ -146,7 +148,9 @@ export default function GraphicDesigns() {
               <div className="border-t border-white/10 p-5">
                 <Badge tone="violet">{selectedDesign.category}</Badge>
                 <h3 className="mt-3 text-xl font-bold text-white">{selectedDesign.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-slate-300">{selectedDesign.description}</p>
+                <p className="mt-2 text-sm leading-6 text-slate-300">
+                  {selectedDesign.description}
+                </p>
               </div>
             </motion.div>
           </motion.div>

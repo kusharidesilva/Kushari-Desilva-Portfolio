@@ -25,9 +25,7 @@ export default function Hero() {
           }}
           className="max-w-3xl"
         >
-          <motion.div
-            variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
-          >
+          <motion.div variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}>
             <Badge tone="cyan">Available for UI/UX, web, and design projects</Badge>
           </motion.div>
           <motion.h1
@@ -46,10 +44,9 @@ export default function Hero() {
             variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
             className="mt-5 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg"
           >
-            I am a third-year BSc (Hons) in Computer Science undergraduate at Saegis Campus,
-            Sri Lanka. I am passionate about creating clean, user-friendly digital
-            experiences through UI/UX design, web development, research, and creative graphic
-            design.
+            I am a third-year BSc (Hons) in Computer Science undergraduate at Saegis Campus, Sri
+            Lanka. I am passionate about creating clean, user-friendly digital experiences through
+            UI/UX design, web development, research, and creative graphic design.
           </motion.p>
           <motion.div
             variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}

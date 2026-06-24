@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "python -m http.server 4173 --directory out",
     "preview": "python -m http.server 4173 --directory out",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "framer-motion": "^12.0.0",
@@ -25,6 +29,7 @@
     "eslint": "^9.0.0",
     "eslint-config-next": "^15.0.0",
     "postcss": "^8.4.49",
+    "prettier": "^3.5.3",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.2"
   }

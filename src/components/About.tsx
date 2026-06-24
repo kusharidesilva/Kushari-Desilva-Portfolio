@@ -53,14 +53,14 @@ export default function About() {
           >
             <Badge tone="cyan">Sri Lanka</Badge>
             <p className="mt-6 text-base leading-8 text-slate-300 sm:text-lg">
-              I am a Computer Science undergraduate with a strong interest in software
-              development, UI/UX design, front-end development, and graphic design. I enjoy
-              turning ideas into clean, practical, and visually appealing digital products.
+              I am a Computer Science undergraduate with a strong interest in software development,
+              UI/UX design, front-end development, and graphic design. I enjoy turning ideas into
+              clean, practical, and visually appealing digital products.
             </p>
             <p className="mt-4 text-base leading-8 text-slate-300 sm:text-lg">
-              Alongside my academic work, I run a graphic design business and have worked on
-              social media posts, branding designs, UI/UX prototypes, and web interfaces. My
-              goal is to create digital work that feels clear, friendly, and useful.
+              Alongside my academic work, I run a graphic design business and have worked on social
+              media posts, branding designs, UI/UX prototypes, and web interfaces. My goal is to
+              create digital work that feels clear, friendly, and useful.
             </p>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
