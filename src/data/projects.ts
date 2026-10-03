@@ -40,7 +40,7 @@ export const projects: Project[] = [
     description:
       "A customer-centric online flower shopping platform with registration, login, browsing, cart, wishlist, checkout, orders, and admin-side features.",
     technologies: ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap", "XAMPP"],
-    image: "/images/api-flora.png",
+    image: "/images/api-flora.webp",
     highlight:
       "Backend and user-side functionality with Selenium, PHPUnit, and JMeter testing work.",
     featured: true,
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     description:
       "A secure digital voting concept for Sri Lanka with citizen authentication, candidate selection, submission feedback, and transparent voting flow.",
     technologies: ["Figma", "UX Research", "Prototype", "User Flow"],
-    image: "/images/digital-voting.png",
+    image: "/images/digital-voting.webp",
     highlight: "1st Runner-up at Saegis Campus CodePulse 2024 Designathon.",
     featured: true,
     links: [
@@ -75,7 +75,7 @@ export const projects: Project[] = [
     description:
       "A clean event booking and management app interface designed to improve event discovery, booking, and organizer workflows.",
     technologies: ["Figma", "Wireframes", "Prototype", "Responsive UI"],
-    image: "/images/event-booking.png",
+    image: "/images/event-booking.webp",
     links: [
       {
         label: "View Prototype",
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     description:
       "A reading platform concept with short stories, adventure, fantasy, horror, and mystery categories for leisure reading.",
     technologies: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
-    image: "/images/kd-creations.png"
+    image: "/images/kd-creations.webp"
   },
   {
     title: "Hogwarts Website",
@@ -99,7 +99,7 @@ export const projects: Project[] = [
     description:
       "A frontend website for Hogwarts with home page, syllabus, professors, houses, and character sections.",
     technologies: ["HTML", "CSS", "Bootstrap"],
-    image: "/images/hogwarts.png",
+    image: "/images/hogwarts.webp",
     links: [
       {
         label: "View Project",
@@ -115,7 +115,7 @@ export const projects: Project[] = [
     description:
       "A frontend travel website with home, countries, and gallery sections designed for visual exploration.",
     technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    image: "/images/travel.png",
+    image: "/images/travel.webp",
     links: [
       {
         label: "View Project",
@@ -131,7 +131,7 @@ export const projects: Project[] = [
     description:
       "A UI design for an international client running a Sri Lankan safari travel business, focused on clarity, usability, and visual appeal.",
     technologies: ["Figma", "Client UI", "Visual Design"],
-    image: "/images/travel.png"
+    image: "/images/travel.webp"
   },
   {
     title: "Restaurant Menu UI/UX Design",
@@ -139,7 +139,7 @@ export const projects: Project[] = [
     description:
       "A visually appealing restaurant menu interface that helps users browse dishes easily and quickly.",
     technologies: ["Figma", "Mobile UI", "Prototype"],
-    image: "/images/restaurant-menu.png",
+    image: "/images/restaurant-menu.webp",
     links: [
       {
         label: "View Prototype",
@@ -154,7 +154,7 @@ export const projects: Project[] = [
     description:
       "A clean online store interface designed to make product browsing and purchasing easier for customers.",
     technologies: ["Figma", "E-commerce UX", "Prototype"],
-    image: "/images/ecommerce-ui.png",
+    image: "/images/ecommerce-ui.webp",
     links: [
       {
         label: "View Prototype",
@@ -169,7 +169,7 @@ export const projects: Project[] = [
     description:
       "A simple mobile signup flow focused on reducing friction and improving user onboarding.",
     technologies: ["Figma", "Mobile UX", "Onboarding"],
-    image: "/images/signup-flow.png",
+    image: "/images/signup-flow.webp",
     links: [
       {
         label: "View Prototype",
@@ -184,7 +184,7 @@ export const projects: Project[] = [
     description:
       "A professional email template design for marketing and promotional communication.",
     technologies: ["Figma", "Email Design", "Visual Layout"],
-    image: "/images/email-template.png",
+    image: "/images/email-template.webp",
     links: [
       {
         label: "View Design",
@@ -199,7 +199,7 @@ export const projects: Project[] = [
     description:
       "A Java console-based exam management system with database connection and GPA-based best performer identification.",
     technologies: ["Java", "MySQL", "Console App"],
-    image: "/images/kd-creations.png"
+    image: "/images/kd-creations.webp"
   },
   {
     title: "SOAP Calculator Web Service",
@@ -207,7 +207,7 @@ export const projects: Project[] = [
     description:
       "A basic SOAP web service calculator with a Windows Forms client for service consumption practice.",
     technologies: ["C#", "ASP.NET Web Service", "Visual Studio"],
-    image: "/images/kd-creations.png"
+    image: "/images/kd-creations.webp"
   },
   {
     title: "OpenCV Computer Vision Exercises",
@@ -215,7 +215,7 @@ export const projects: Project[] = [
     description:
       "Practice tasks covering shapes, color models, webcam capture, overlays, image processing basics, and visual exercises.",
     technologies: ["Python", "OpenCV", "NumPy"],
-    image: "/images/kd-creations.png"
+    image: "/images/kd-creations.webp"
   },
   {
     title: "Reality TV Production Management System",
@@ -223,6 +223,6 @@ export const projects: Project[] = [
     description:
       "A web system concept for contestant management, episode planning, audience voting, location management, and production collaboration.",
     technologies: ["System Design", "Web Application", "Database Planning"],
-    image: "/images/kd-creations.png"
+    image: "/images/kd-creations.webp"
   }
 ];

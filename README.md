@@ -1,48 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+﻿# Kushari Desilva Portfolio
 
-## Getting Started
+A statically exported Next.js portfolio hosted with Cloudflare Workers Static Assets.
 
-First, run the development server:
+## Local development
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). To preview the production export with Cloudflare's local server, run `npm run start` and open the URL printed by Wrangler (normally `http://127.0.0.1:8787`).
 
-You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Cloudflare Workers
-
-This project is configured as a static frontend project.
-
-First, build the static site:
+## Checks
 
 ```bash
+npm run lint
+npm run type-check
 npm run build
 ```
 
-The static output is generated in the `out` folder.
+The static site is exported to `out/`. Large source PNGs are retained in `public/images/`; the site uses optimized WebP versions. `public/.assetsignore` keeps the original PNGs out of Cloudflare's asset upload.
 
-To deploy using Cloudflare Workers Static Assets:
+## Deploy to Cloudflare
+
+Authenticate once with `npx wrangler login`, then run:
 
 ```bash
 npm run deploy:workers
 ```
 
-The Workers configuration is in `wrangler.jsonc`.
+The Worker name and static asset directory are set in `wrangler.jsonc`. The deployment URL is printed by Wrangler. The contact form opens a prefilled message in the visitor's email app, so no server or email API is required.

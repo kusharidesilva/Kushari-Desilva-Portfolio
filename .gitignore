@@ -1,4 +1,6 @@
 .next/
+out/
+.wrangler/
 node_modules/
 .npm-cache/
 

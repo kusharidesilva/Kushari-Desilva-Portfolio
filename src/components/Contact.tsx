@@ -7,11 +7,19 @@ import { Github, Instagram, Linkedin, Mail, MapPin, Send } from "lucide-react";
 import { FormEvent, useState } from "react";
 
 export default function Contact() {
-  const [submitted, setSubmitted] = useState(false);
+  const [emailOpened, setEmailOpened] = useState(false);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setSubmitted(true);
+    const form = new FormData(event.currentTarget);
+    const name = String(form.get("name") ?? "").trim();
+    const email = String(form.get("email") ?? "").trim();
+    const subject = String(form.get("subject") ?? "").trim();
+    const message = String(form.get("message") ?? "").trim();
+    const body = `${message}\n\nFrom: ${name} <${email}>`;
+
+    window.location.href = `mailto:${socialLinks.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    setEmailOpened(true);
   };
 
   return (
@@ -129,11 +137,11 @@ export default function Contact() {
                 className="focus-ring inline-flex items-center gap-2 rounded-full bg-sky-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:bg-sky-200"
               >
                 <Send className="h-4 w-4" />
-                Send Message
+                Open Email App
               </button>
-              {submitted ? (
-                <p className="text-sm font-medium text-emerald-200">
-                  Thanks. This demo form is ready for a backend connection.
+              {emailOpened ? (
+                <p role="status" className="text-sm font-medium text-emerald-200">
+                  Your email app should open with the message ready. Please send it there.
                 </p>
               ) : null}
             </div>
