@@ -7,8 +7,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Badge from "@/components/Badge";
 
-const floatingBadges = ["UI/UX", "Web Dev", "Graphic Design", "Research"];
-
 export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden pt-28 sm:pt-32 lg:pt-36">
@@ -103,28 +101,10 @@ export default function Hero() {
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/85 to-transparent p-5">
                 <p className="text-sm font-semibold text-sky-100">Creative developer</p>
-                <p className="text-xs text-slate-300">Designing with empathy and code</p>
+                <p className="text-xs text-slate-300">Creating thoughtful digital experiences</p>
               </div>
             </div>
           </div>
-
-          {floatingBadges.map((badge, index) => (
-            <motion.span
-              key={badge}
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.55 + index * 0.08 }}
-              className={[
-                "glass-blur-xl absolute hidden rounded-full border border-white/15 bg-slate-950/80 px-4 py-2 text-sm font-semibold text-white shadow-violet sm:inline-flex",
-                index === 0 ? "-left-6 top-16" : "",
-                index === 1 ? "-right-4 top-28" : "",
-                index === 2 ? "-left-2 bottom-24" : "",
-                index === 3 ? "right-6 bottom-10" : ""
-              ].join(" ")}
-            >
-              {badge}
-            </motion.span>
-          ))}
         </motion.div>
       </div>
 

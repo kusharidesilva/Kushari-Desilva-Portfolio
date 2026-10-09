@@ -5,6 +5,10 @@ export const metadata: Metadata = {
   title: "Kushari Desilva | Portfolio",
   description:
     "Modern portfolio for Kushari Desilva, Computer Science undergraduate, UI/UX designer, graphic designer, and web developer.",
+  icons: {
+    icon: "/images/title.jpg",
+    shortcut: "/images/title.jpg"
+  },
   openGraph: {
     title: "Kushari Desilva | Portfolio",
     description: "Designing clean digital experiences with creativity and code.",
