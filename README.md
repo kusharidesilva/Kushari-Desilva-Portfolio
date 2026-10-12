@@ -2,6 +2,10 @@
 
 A statically exported Next.js portfolio hosted with Cloudflare Workers Static Assets.
 
+## Live site
+
+[View Kushari Desilva's portfolio](https://kushari-desilva-portfolio.kusharidesilva3.workers.dev)
+
 ## Local development
 
 ```bash
