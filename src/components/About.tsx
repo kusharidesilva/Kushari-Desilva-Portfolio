@@ -7,22 +7,26 @@ import { BriefcaseBusiness, Code2, GraduationCap, Palette, Trophy, Users } from 
 import Image from "next/image";
 
 const quickInfo = [
-  { label: "Computer Science Undergraduate", icon: GraduationCap, tone: "cyan" as const },
-  { label: "UI/UX & Graphic Designer", icon: Palette, tone: "violet" as const },
-  { label: "Web Developer", icon: Code2, tone: "emerald" as const },
-  { label: "Online Entrepreneur", icon: BriefcaseBusiness, tone: "slate" as const },
-  { label: "Rotaract Club Editor 2024/25", icon: Users, tone: "violet" as const },
+  {
+    label: "Final-Year Computer Science Undergraduate",
+    icon: GraduationCap,
+    tone: "cyan" as const
+  },
+  { label: "Trainee Software Engineer", icon: BriefcaseBusiness, tone: "violet" as const },
+  { label: "Frontend & Full-Stack Projects", icon: Code2, tone: "emerald" as const },
+  { label: "UI/UX Designer", icon: Palette, tone: "slate" as const },
+  { label: "ICT Club Editor 2025/26", icon: Users, tone: "violet" as const },
   { label: "CodePulse 2024 Designathon 1st Runner-up", icon: Trophy, tone: "cyan" as const }
 ];
 
 export default function About() {
   return (
-    <section id="about" className="py-20 sm:py-24">
+    <section id="about" className="overflow-x-clip py-20 sm:py-24">
       <div className="section-container">
         <SectionTitle
           eyebrow="About Me"
-          title="A creative computer science undergraduate building practical digital experiences."
-          description="I combine software development, UI/UX thinking, and graphic design to turn ideas into polished, useful products."
+          title="A computer science undergraduate building practical digital solutions."
+          description="I combine software development and UI/UX thinking to build useful, approachable products."
         />
 
         <div className="mt-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
@@ -53,14 +57,16 @@ export default function About() {
           >
             <Badge tone="cyan">Sri Lanka</Badge>
             <p className="mt-6 text-base leading-8 text-slate-300 sm:text-lg">
-              I am a Computer Science undergraduate with a strong interest in software development,
-              UI/UX design, front-end development, and graphic design. I enjoy turning ideas into
-              clean, practical, and visually appealing digital products.
+              I am a final-year BSc (Hons) in Computer Science undergraduate at Saegis Campus,
+              interested in software engineering, frontend and full-stack development, UI/UX design,
+              and project management. I work with React, Next.js, TypeScript, PHP, MySQL, Firebase,
+              and Figma across academic and independent projects.
             </p>
             <p className="mt-4 text-base leading-8 text-slate-300 sm:text-lg">
-              Alongside my academic work, I run a graphic design business and have worked on social
-              media posts, branding designs, UI/UX prototypes, and web interfaces. My goal is to
-              create digital work that feels clear, friendly, and useful.
+              My work includes a full-stack research platform, responsive frontend websites, and
+              travel website interfaces for real clients. At Bizadvisor, I have gained experience
+              collaborating on digital solutions and design work. University leadership roles have
+              strengthened my teamwork, communication, and project coordination skills.
             </p>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-2">

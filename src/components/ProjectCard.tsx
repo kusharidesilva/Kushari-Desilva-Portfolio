@@ -26,13 +26,19 @@ export default function ProjectCard({ project, onOpen }: ProjectCardProps) {
         onClick={() => onOpen(project)}
         className="focus-ring relative block aspect-[16/10] w-full overflow-hidden text-left"
       >
-        <Image
-          src={project.image}
-          alt={`${project.title} preview`}
-          fill
-          className="object-cover transition duration-700 group-hover:scale-105"
-          sizes="(min-width: 1280px) 30vw, (min-width: 768px) 45vw, 92vw"
-        />
+        {project.image ? (
+          <Image
+            src={project.image}
+            alt={`${project.title} preview`}
+            fill
+            className="object-cover transition duration-700 group-hover:scale-105"
+            sizes="(min-width: 1280px) 30vw, (min-width: 768px) 45vw, 92vw"
+          />
+        ) : (
+          <span className="flex h-full items-center justify-center bg-gradient-to-br from-slate-900 via-sky-950 to-violet-950 px-6 text-center text-xl font-bold text-white">
+            {project.title}
+          </span>
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent" />
         <div className="absolute left-4 top-4 flex flex-wrap gap-2">
           {project.featured ? (
@@ -55,6 +61,10 @@ export default function ProjectCard({ project, onOpen }: ProjectCardProps) {
             {project.secondaryCategory}
           </p>
         ) : null}
+        {project.role ? (
+          <p className="mt-1 text-xs font-semibold text-sky-200">{project.role}</p>
+        ) : null}
+        {project.period ? <p className="mt-1 text-xs text-slate-400">{project.period}</p> : null}
         <p className="mt-3 line-clamp-4 text-sm leading-6 text-slate-400">{project.description}</p>
         <div className="mt-5 flex flex-wrap gap-2">
           {project.technologies.slice(0, 5).map((tech) => (

@@ -12,9 +12,10 @@ const navItems = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
-  { label: "Designs", href: "#designs" },
-  { label: "Research", href: "#research" },
-  { label: "Achievements", href: "#achievements" },
+  { label: "Experience", href: "#experience" },
+  { label: "Education", href: "#education" },
+  { label: "Certifications", href: "#certifications" },
+  { label: "Volunteering", href: "#achievements" },
   { label: "Contact", href: "#contact" }
 ];
 
@@ -47,7 +48,7 @@ export default function Navbar() {
 
   const navLinkClass = (href: string) =>
     cn(
-      "rounded-full px-3 py-2 text-sm font-medium transition focus-ring",
+      "rounded-full px-2 py-2 text-sm font-medium transition focus-ring",
       active === href.replace("#", "")
         ? "bg-sky-300/15 text-sky-100"
         : "text-slate-300 hover:bg-white/5 hover:text-white"
@@ -105,7 +106,7 @@ export default function Navbar() {
             aria-label="Close menu"
             aria-expanded="true"
             onClick={() => setOpen(false)}
-            className="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-white lg:hidden"
+            className="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-white xl:hidden"
           >
             <X className="h-5 w-5" />
           </button>
@@ -115,7 +116,7 @@ export default function Navbar() {
             aria-label="Open menu"
             aria-expanded="false"
             onClick={() => setOpen(true)}
-            className="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-white lg:hidden"
+            className="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-white xl:hidden"
           >
             <Menu className="h-5 w-5" />
           </button>
@@ -128,7 +129,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="overflow-hidden border-t border-white/10 bg-slate-950/95 lg:hidden"
+            className="overflow-hidden border-t border-white/10 bg-slate-950/95 xl:hidden"
           >
             <div className="section-container grid gap-2 py-4">
               {navItems.map((item) => (

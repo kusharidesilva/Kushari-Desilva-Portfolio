@@ -12,7 +12,7 @@ export default function Skills() {
         <SectionTitle
           eyebrow="Skills"
           title="A balanced toolkit for development, design, testing, and research."
-          description="The stack covers front-end development, academic systems, UI/UX design, creative tools, and research-focused thinking."
+          description="Skills developed through coursework, full-stack research, frontend projects, and client design work."
         />
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">

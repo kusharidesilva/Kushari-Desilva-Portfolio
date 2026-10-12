@@ -2,23 +2,44 @@
 
 import Badge from "@/components/Badge";
 import SectionTitle from "@/components/SectionTitle";
-import { timelineEntries } from "@/data/achievements";
+import { TimelineKind, timelineEntries } from "@/data/achievements";
 import { motion } from "framer-motion";
-import { BriefcaseBusiness, GraduationCap } from "lucide-react";
+import { Award, BriefcaseBusiness, GraduationCap } from "lucide-react";
 
-export default function Timeline() {
+const sectionInfo: Record<TimelineKind, { id: string; title: string; description: string }> = {
+  Experience: {
+    id: "experience",
+    title: "Professional experience.",
+    description: "Work at Bizadvisor across software engineering and UI/UX design."
+  },
+  Education: {
+    id: "education",
+    title: "Education and academic foundations.",
+    description: "Computer science studies and earlier qualifications."
+  },
+  Certifications: {
+    id: "certifications",
+    title: "Courses and certifications.",
+    description: "Verified learning milestones in development, design, AI, and project management."
+  }
+};
+
+export default function Timeline({ kind }: { kind: TimelineKind }) {
+  const info = sectionInfo[kind];
+  const entries = timelineEntries.filter((entry) => entry.type === kind);
   return (
-    <section id="experience" className="py-20 sm:py-24">
+    <section id={info.id} className="py-20 sm:py-24">
       <div className="section-container">
-        <SectionTitle
-          eyebrow="Education & Experience"
-          title="A growing path through computing, design, and practical project work."
-          description="Academic learning and hands-on creative work come together across university projects, client designs, and entrepreneurship."
-        />
+        <SectionTitle eyebrow={kind} title={info.title} description={info.description} />
 
         <div className="mt-12 grid gap-5 lg:grid-cols-2">
-          {timelineEntries.map((entry, index) => {
-            const Icon = entry.type === "Education" ? GraduationCap : BriefcaseBusiness;
+          {entries.map((entry, index) => {
+            const Icon =
+              entry.type === "Education"
+                ? GraduationCap
+                : entry.type === "Certifications"
+                  ? Award
+                  : BriefcaseBusiness;
             return (
               <motion.article
                 key={`${entry.title}-${entry.organization}`}

@@ -2,7 +2,7 @@
 
 import { socialLinks } from "@/data/social";
 import { motion } from "framer-motion";
-import { ArrowDown, Download, Mail, Palette, Rocket } from "lucide-react";
+import { ArrowDown, Download, Mail, Rocket, UserRound } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Badge from "@/components/Badge";
@@ -24,7 +24,9 @@ export default function Hero() {
           className="max-w-3xl"
         >
           <motion.div variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}>
-            <Badge tone="cyan">Available for UI/UX, web, and design projects</Badge>
+            <Badge tone="cyan">
+              Open to Software Engineering and IT Opportunities
+            </Badge>
           </motion.div>
           <motion.h1
             variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
@@ -35,16 +37,17 @@ export default function Hero() {
           <motion.p
             variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
             className="mt-5 text-xl font-semibold leading-8 text-slate-100 sm:text-2xl"
-          >
-            Computer Science Undergraduate | UI/UX Designer | Graphic Designer | Web Developer
+          >s it
+            Computer Science Undergraduate | Trainee Software Engineer | Full-stack Developer | UI/UX
+            Designer
           </motion.p>
           <motion.p
             variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
             className="mt-5 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg"
           >
-            I am a third-year BSc (Hons) in Computer Science undergraduate at Saegis Campus, Sri
-            Lanka. I am passionate about creating clean, user-friendly digital experiences through
-            UI/UX design, web development, research, and creative graphic design.
+            I am a final-year BSc (Hons) in Computer Science undergraduate at Saegis Campus, Sri
+            Lanka. I build responsive, user-focused applications and turn ideas into practical
+            digital experiences through software development and UI/UX design.
           </motion.p>
           <motion.div
             variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
@@ -58,11 +61,11 @@ export default function Hero() {
               View Projects
             </Link>
             <Link
-              href="#designs"
+              href="#about"
               className="focus-ring inline-flex items-center gap-2 rounded-full border border-violet-300/40 bg-violet-300/10 px-5 py-3 text-sm font-bold text-violet-100 transition hover:bg-violet-300/20"
             >
-              <Palette className="h-4 w-4" />
-              View Designs
+              <UserRound className="h-4 w-4" />
+              About Me
             </Link>
             <a
               href={socialLinks.cv}
@@ -86,7 +89,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.94, y: 28 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
-          className="relative mx-auto w-full max-w-md lg:max-w-lg"
+          className="relative mx-auto hidden w-full max-w-md lg:block lg:max-w-lg"
         >
           <div className="absolute inset-8 rounded-[2rem] bg-gradient-to-br from-sky-300/25 via-transparent to-violet-400/25 blur-3xl" />
           <div className="glass-card relative rounded-[2rem] p-3 shadow-glow">
@@ -100,7 +103,7 @@ export default function Hero() {
                 sizes="(min-width: 1024px) 42vw, 90vw"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/85 to-transparent p-5">
-                <p className="text-sm font-semibold text-sky-100">Creative developer</p>
+                <p className="text-sm font-semibold text-sky-100">Software developer & designer</p>
                 <p className="text-xs text-slate-300">Creating thoughtful digital experiences</p>
               </div>
             </div>

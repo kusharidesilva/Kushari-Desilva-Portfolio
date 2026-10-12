@@ -9,20 +9,30 @@ export const skillGroups: SkillGroup[] = [
     title: "Frontend Development",
     description: "Clean interfaces, responsive layouts, and interactive user flows.",
     skills: [
-      "HTML",
-      "CSS",
+      "HTML5",
+      "CSS3",
       "JavaScript",
       "TypeScript",
       "React",
       "Next.js",
       "Bootstrap",
-      "Tailwind CSS"
+      "Tailwind CSS",
+      "Responsive Web Design"
     ]
   },
   {
-    title: "Backend & Database",
+    title: "Backend & Databases",
     description: "Academic and project experience with server-side logic and data.",
-    skills: ["PHP", "MySQL", "Java", "C#", "REST basics", "SOAP basics"]
+    skills: [
+      "PHP",
+      "MySQL",
+      "Firebase",
+      "Java",
+      "Python",
+      "C#",
+      "REST API fundamentals",
+      "SOAP basics"
+    ]
   },
   {
     title: "UI/UX & Design",
@@ -31,38 +41,57 @@ export const skillGroups: SkillGroup[] = [
       "Figma",
       "Wireframing",
       "Prototyping",
-      "User Flow Design",
+      "User Flows",
       "Responsive UI Design",
+      "User-Centered Design",
       "Visual Design",
-      "Branding",
-      "Social Media Design"
+      "Branding"
     ]
   },
   {
-    title: "Tools",
-    description: "Daily tools for building, testing, collaborating, and designing.",
+    title: "Development Tools",
+    description: "Tools used across development and academic projects.",
+    skills: ["Git", "GitHub", "VS Code", "XAMPP", "Composer"]
+  },
+  {
+    title: "Deployment & Platforms",
+    description: "Platforms used to publish projects and prototypes.",
+    skills: ["Cloudflare Pages", "Cloudflare Workers", "AWS Amplify", "Firebase"]
+  },
+  {
+    title: "Project Management",
+    description: "Planning and coordinating practical digital work.",
     skills: [
-      "Git",
-      "GitHub",
-      "VS Code",
-      "XAMPP",
-      "Composer",
+      "Agile Methodologies",
+      "Project Planning",
+      "Risk Management",
+      "Stakeholder Coordination",
+      "Jira",
+      "Microsoft Project"
+    ]
+  },
+  {
+    title: "Testing & Research",
+    description: "Academic testing and research methods.",
+    skills: [
       "Selenium",
       "JMeter",
       "PHPUnit",
-      "Canva",
-      "Photoshop-style tools"
+      "Requirements Analysis",
+      "Literature Review",
+      "Survey Analysis"
     ]
   },
   {
-    title: "Research & Academic",
-    description: "Exploring education technology, AI, and data-informed learning.",
+    title: "Professional Skills",
+    description: "Working with teams and clients.",
     skills: [
-      "Literature Review",
-      "Research Gap Analysis",
-      "Education Technology",
-      "AI in Education",
-      "Data Analysis basics"
+      "Teamwork",
+      "Leadership",
+      "Communication",
+      "Problem-Solving",
+      "Time Management",
+      "Client Communication"
     ]
   }
 ];

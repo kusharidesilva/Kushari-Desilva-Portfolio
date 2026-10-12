@@ -3,11 +3,9 @@ import Achievements from "@/components/Achievements";
 import BackToTop from "@/components/BackToTop";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import GraphicDesigns from "@/components/GraphicDesigns";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
-import Research from "@/components/Research";
 import ScrollProgress from "@/components/ScrollProgress";
 import Skills from "@/components/Skills";
 import Timeline from "@/components/Timeline";
@@ -22,10 +20,10 @@ export default function Home() {
         <About />
         <Skills />
         <Projects />
-        <GraphicDesigns />
-        <Research />
+        <Timeline kind="Experience" />
+        <Timeline kind="Education" />
+        <Timeline kind="Certifications" />
         <Achievements />
-        <Timeline />
         <Contact />
       </main>
       <Footer />

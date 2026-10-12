@@ -10,6 +10,15 @@ export interface DesignWork {
   category: DesignCategory;
   description: string;
   image: string;
+  tags?: string[];
+  gallery?: DesignGalleryItem[];
+}
+
+export interface DesignGalleryItem {
+  title: string;
+  category: string;
+  image: string;
+  alt: string;
 }
 
 export const designCategories: Array<"All" | DesignCategory> = [
@@ -23,53 +32,32 @@ export const designCategories: Array<"All" | DesignCategory> = [
 
 export const designWorks: DesignWork[] = [
   {
-    title: "KD Creations Design Work",
+    title: "Design Works",
     category: "Branding",
     description:
       "Graphic design work including flyers, logos, business cards, and promotional designs.",
-    image: "/images/kd-creations.webp"
-  },
-  {
-    title: "Social Media Post Designs",
-    category: "Social Media Posts",
-    description:
-      "Creative posts for awareness, motivation, events, Father's Day, Poson events, and promotions.",
-    image: "/images/social-media.webp"
-  },
-  {
-    title: "Saegis ICT Club Designs",
-    category: "Event Designs",
-    description:
-      "Club-related designs including posts, tie designs, wristband designs, and event branding concepts.",
-    image: "/images/kd-creations.webp"
-  },
-  {
-    title: "Bizadvisor Social Media & Cover Designs",
-    category: "Client Designs",
-    description:
-      "Modern teaser posts, Facebook covers, LinkedIn covers, and dashboard launch visuals.",
-    image: "/images/social-media.webp"
-  },
-  {
-    title: "Vehicle Rental Promotional Designs",
-    category: "Client Designs",
-    description:
-      "Creative social media post concepts and promotional visuals for vehicle rental services.",
-    image: "/images/social-media.webp"
-  },
-  {
-    title: "Event Invitation Designs",
-    category: "Event Designs",
-    description:
-      "Clean and culturally suitable event invitation designs, including Poson-related campus event posts.",
-    image: "/images/social-media.webp"
-  },
-  {
-    title: "Flower Shop UI Graphics",
-    category: "UI Graphics",
-    description:
-      "Soft, floral interface graphics for online flower shopping and product browsing experiences.",
-    image: "/images/flower-shop-uiux.webp"
+    image: "/images/design-works.webp",
+    tags: ["Branding", "Social Media Post Designs", "Creative Designs"],
+    gallery: [
+      {
+        title: "UAE Visa Promotion",
+        category: "Social Media Design",
+        image: "/images/design-works/uae-visa-promotion.webp",
+        alt: "Blue Alban Tours and Travels UAE visa promotional social media design"
+      },
+      {
+        title: "Festive Travel Promotion",
+        category: "Social Media Design",
+        image: "/images/design-works/festive-travel-promotion.webp",
+        alt: "Red festive Alban Tours and Travels promotion design"
+      },
+      {
+        title: "RJ Sports Logo",
+        category: "Branding and Logo Design",
+        image: "/images/design-works/rj-sports-logo.webp",
+        alt: "Red, white, and black RJ basketball sports logo design"
+      }
+    ]
   },
   {
     title: "E-commerce Interface Visuals",

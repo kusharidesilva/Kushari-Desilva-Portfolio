@@ -4,14 +4,15 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Kushari Desilva | Portfolio",
   description:
-    "Modern portfolio for Kushari Desilva, Computer Science undergraduate, UI/UX designer, graphic designer, and web developer.",
+    "Portfolio of Kushari Desilva, final-year Computer Science undergraduate, trainee software engineer, frontend developer, and UI/UX designer.",
   icons: {
     icon: "/images/title.jpg",
     shortcut: "/images/title.jpg"
   },
   openGraph: {
     title: "Kushari Desilva | Portfolio",
-    description: "Designing clean digital experiences with creativity and code.",
+    description:
+      "Full-stack research, frontend websites, real client UI/UX projects, and academic work by Kushari Desilva.",
     type: "website"
   }
 };

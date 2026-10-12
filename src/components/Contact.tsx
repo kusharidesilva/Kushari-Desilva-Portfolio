@@ -16,19 +16,26 @@ export default function Contact() {
     const email = String(form.get("email") ?? "").trim();
     const subject = String(form.get("subject") ?? "").trim();
     const message = String(form.get("message") ?? "").trim();
-    const body = `${message}\n\nFrom: ${name} <${email}>`;
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Subject: ${subject}`,
+      "",
+      "Message:",
+      message
+    ].join("\n");
 
     window.location.href = `mailto:${socialLinks.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setEmailOpened(true);
   };
 
   return (
-    <section id="contact" className="py-20 sm:py-24">
+    <section id="contact" className="overflow-x-clip py-20 sm:py-24">
       <div className="section-container">
         <SectionTitle
           eyebrow="Contact"
-          title="Let's build something creative together."
-          description="Open to UI/UX design, web development, research-aligned projects, and graphic design work."
+          title="Let's connect and build something meaningful."
+          description="Open to software engineering, frontend development, web development, UI/UX design, and IT-related opportunities."
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
@@ -137,11 +144,11 @@ export default function Contact() {
                 className="focus-ring inline-flex items-center gap-2 rounded-full bg-sky-300 px-5 py-3 text-sm font-bold text-slate-950 transition hover:bg-sky-200"
               >
                 <Send className="h-4 w-4" />
-                Open Email App
+                Send Message
               </button>
               {emailOpened ? (
                 <p role="status" className="text-sm font-medium text-emerald-200">
-                  Your email app should open with the message ready. Please send it there.
+                  Your completed message is ready in your email app. Review it and press Send.
                 </p>
               ) : null}
             </div>
