@@ -57,10 +57,10 @@ export default function About() {
           >
             <Badge tone="cyan">Sri Lanka</Badge>
             <p className="mt-6 text-base leading-8 text-slate-300 sm:text-lg">
-              I am a final-year BSc (Hons) in Computer Science undergraduate at Saegis Campus,
-              interested in software engineering, frontend and full-stack development, UI/UX design,
-              and project management. I work with React, Next.js, TypeScript, PHP, MySQL, Firebase,
-              and Figma across academic and independent projects.
+              I am a final-year student pursuing a BSc (Hons) in Computer Science at Saegis Campus.
+              My interests include software engineering, frontend and full-stack development, UI/UX
+              design, and project management. I work with React, Next.js, TypeScript, PHP, MySQL,
+              Firebase, and Figma across academic and independent projects.
             </p>
             <p className="mt-4 text-base leading-8 text-slate-300 sm:text-lg">
               My work includes a full-stack research platform, responsive frontend websites, and

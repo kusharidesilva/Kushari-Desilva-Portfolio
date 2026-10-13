@@ -37,16 +37,16 @@ export default function Hero() {
           <motion.p
             variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
             className="mt-5 text-xl font-semibold leading-8 text-slate-100 sm:text-2xl"
-          >s it
-            Computer Science Undergraduate | Trainee Software Engineer | Full-stack Developer | UI/UX
-            Designer
+          >
+            Final-Year Computer Science Student | Trainee Software Engineer | Full-Stack Developer |
+            UI/UX Designer
           </motion.p>
           <motion.p
             variants={{ hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }}
             className="mt-5 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg"
           >
-            I am a final-year BSc (Hons) in Computer Science undergraduate at Saegis Campus, Sri
-            Lanka. I build responsive, user-focused applications and turn ideas into practical
+            I am a final-year student pursuing a BSc (Hons) in Computer Science at Saegis Campus,
+            Sri Lanka. I build responsive, user-focused applications and turn ideas into practical
             digital experiences through software development and UI/UX design.
           </motion.p>
           <motion.div
